@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+/* General container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("images/bg.jpg");
+    background-position: center center; /* Mejor centrado */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation menu */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #02751b;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu .navbar ul li a:hover {
+    background-color: #029902;
+    color: #ffffff;
+}
+
+/* Header content */
+.header-content {
+    text-align: center;
+    color: #fafafa;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 20px;
+    margin-bottom: 25px;
+}
+
+/* Button styles */
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: #025c0a;
+}
+
+
+
+
+.ECOCHARGE {
+    padding: 100px 0px;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+/* Estilo para el contenido dentro de ECOCHARGE */
+.ECOCHARGE-content {
+    text-align: center;
+}
+
+/* Estilo para el título h2 */
+.ECOCHARGE-content h2 {
+    font-size:  55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el párrafo debajo del título */
+.txt-p {
+    font-size: 16px;
+    color:#414247;
+    padding: 0 250px;
+    margin-bottom:  35px;
+}
+
+/* Nuevo código para la imagen encima del título */
+.ECOCHARGE-img-container {
+    text-align: center; /* Centra la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el título */
+}
+
+.ECOCHARGE-img {
+    width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    max-width: 600px; /* Puedes limitar el tamaño máximo si lo deseas */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Opcional: da bordes redondeados a la imagen */
+}
+
+/* Estilo para el contenedor "Sobre nosotros" */
+.Sobre-nosotros {
+    display: flex;
+    justify-content: space-between; /* Alinea las imágenes de manera horizontal con espacio entre ellas */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilo para los contenedores de misión y visión */
+.Mision-1, .Vision {
+    text-align: center; /* Centra el texto debajo de las imágenes */
+    width: 45%; /* Ajusta el tamaño de cada contenedor de imagen y texto */
+}
+
+/* Estilo para las imágenes de misión y visión */
+.Mision-img, .Vision-img {
+    width: 150px; /* Cambié el tamaño de las imágenes a 150px */
+    margin-bottom: 10px; /* Añade espacio entre la imagen y el texto */
+}
+
+/* Baja la imagen de Vision a 30px desde arriba */
+.Vision-img {
+    margin-top: 30px; /* Ajusta este valor según el desplazamiento deseado */
+}
+
+/* Estilo para los encabezados dentro de los contenedores de misión */
+.Mision-1 h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+.Services {
+  display: flex;
+  justify-content: space-between; /* Espacio entre cada servicio */
+  align-items: flex-start;
+  gap: 20px;
+  padding: 50px 0;
+  flex-wrap: wrap; /* Para que en dispositivos pequeños se acomoden en varias líneas */
+
+  /* Imagen de fondo con superposición oscura */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/sol.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* Color de texto en la sección (blanco para contraste) */
+  color: #fff;
+}
+
+/* Estilos generales para cada tarjeta de servicio */
+.service {
+  background-color: transparent; /* Sin fondo para ver la imagen de fondo principal */
+  color: #333;                   /* Cambia a #fff si deseas texto blanco */
+  flex: 1;                       /* Cada servicio ocupa espacio igual */
+  max-width: 32%;                /* Aproximadamente 3 tarjetas por fila */
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Ajuste para dispositivos pequeños: se apilan verticalmente */
+@media (max-width: 768px) {
+  .service {
+    max-width: 100%;
+  }
+}
+
+/* Estilo para las imágenes de los servicios (más pequeñas) */
+.service-icon {
+  width: 40px;  /* Ajusta este valor según el tamaño deseado */
+  height: auto; /* Mantiene la proporción */
+  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el botón */
+.btn-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #03970f;
+  color: #f9fafc;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+/* Sección de Servicios con imagen de fondo y Flexbox */
+.Services {
+    display: flex;
+    justify-content: space-between; /* Espacio entre cada servicio */
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px 0;
+    flex-wrap: wrap; /* Para que en dispositivos pequeños se acomoden en varias líneas */
+  
+    /* Imagen de fondo con superposición oscura */
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("images/sol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    /* Color de texto en la sección (blanco para contraste) */
+    color: #fff;
+  }
+  
+  /* Estilos generales para cada tarjeta de servicio */
+  .service {
+    background-color: transparent; /* Sin fondo para ver la imagen de fondo principal */
+    color: #fff;                   /* Texto en blanco */
+    flex: 1;                       /* Cada servicio ocupa espacio igual */
+    max-width: 32%;                /* Aproximadamente 3 tarjetas por fila */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Ajuste para dispositivos pequeños: se apilan verticalmente */
+  @media (max-width: 768px) {
+    .service {
+      max-width: 100%;
+    }
+  }
+  
+  /* Estilo para las imágenes de los servicios (un poco más grandes) */
+  .service-icon {
+    width: 50px;   /* Aumentado a 50px */
+    height: auto;  /* Mantiene la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  /* Estilo para el botón */
+  .btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #03970f;
+    color: #f9fafc;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+/* Sección de Servicios con imagen de fondo y Flexbox */
+.Services {
+    display: flex;
+    justify-content: space-between; /* Espacio entre cada servicio */
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px 0;
+    flex-wrap: wrap; /* Para que en dispositivos pequeños se acomoden en varias líneas */
+  
+    /* Imagen de fondo con superposición oscura */
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("images/sol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    /* Color de texto en la sección (blanco para contraste) */
+    color: #fff;
+  }
+  
+  /* Sección de Servicios con imagen de fondo y Flexbox */
+.Services {
+    display: flex;
+    justify-content: space-between; /* Espacio entre cada servicio */
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px 0;
+    flex-wrap: wrap; /* Para que en dispositivos pequeños se acomoden en varias líneas */
+  
+    /* Imagen de fondo con superposición oscura */
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("images/sol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  
+    /* Color de texto en la sección (blanco para contraste) */
+    color: #fff;
+  }
+  
+  /* Estilos generales para cada tarjeta de servicio */
+  .service {
+    background-color: transparent; /* Sin fondo para ver la imagen de fondo principal */
+    color: #fff;                   /* Texto en blanco */
+    flex: 1;                       /* Cada servicio ocupa espacio igual */
+    max-width: 32%;                /* Aproximadamente 3 tarjetas por fila */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background-attachment: fixed;
+  }
+  
+  /* Ajuste para dispositivos pequeños: se apilan verticalmente */
+  @media (max-width: 768px) {
+    .service {
+      max-width: 100%;
+    }
+  }
+  
+  /* Estilo para las imágenes de los servicios (un poco más grandes) */
+  .service-icon {
+    width: 50px;   /* Aumentado a 50px */
+    height: auto;  /* Mantiene la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  /* Estilo para el botón */
+  .btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #03970f;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
+
+  .general {
+    background-color: #ffffff; /* Fondo blanco para mayor limpieza */
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1); /* Sombra suave */
+    overflow: hidden;
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    background-image: url("images/road-7525092_1280.jpg");
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-attachment: fixed; /* Hace que la imagen se quede fija cuando se hace scroll */
+}
+
+.general h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff; /* Azul oscuro */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.general p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.general a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #00cc33; /* Azul brillante */
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-align: center; /* Asegura que el texto esté centrado dentro del botón */
+    margin-left: auto;
+    margin-right: auto; /* Centra el botón en el contenedor */
+}
+
+.general a:hover {
+    background-color: #00a537; /* Azul más oscuro */
+    transform: scale(1.05); /* Ligero aumento al pasar el cursor */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* General adaptado para visualización responsiva */
+@media (max-width: 768px) {
+    .general {
+        padding: 30px 15px;
+    }
+
+    .general h2 {
+        font-size: 24px;
+    }
+
+    .general p {
+        font-size: 16px;
+    }
+
+    .general a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+  
+  
+  
+
+
+
+
+
